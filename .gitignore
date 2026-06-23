@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Build output
+.next/
+dist/
+coverage/
+.agents
+
+# Environment
+.env
+.env.*
+!.env.example
+# **/.env*
+
+# Logs
+*.log
+npm-debug.log*
+.logs
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Generated private artifacts
+uploads/
+generated/
+*.pdf
+*.tex
