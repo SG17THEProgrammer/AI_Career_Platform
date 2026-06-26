@@ -4,6 +4,7 @@ import { resumesRouter } from "../modules/resumes/resumes.routes.js";
 import { healthRouter } from "../modules/system/health.routes.js";
 import { atsRouter } from "../modules/ats/ats.routes.js";
 import { tailoredResumeRouter } from "../modules/tailored-resumes/tailoredResume.routes.js";
+import { researchRouter } from "../modules/research/research.routes.js";
 
 export function registerRoutes(app: Express) {
   app.use("/health", healthRouter);
@@ -11,4 +12,8 @@ export function registerRoutes(app: Express) {
   app.use("/resumes", resumesRouter);
   app.use("/ats", atsRouter);
   app.use("/tailored-resumes", tailoredResumeRouter);
+  app.use(
+  "/research",
+  researchRouter
+);
 }

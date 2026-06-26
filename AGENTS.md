@@ -366,7 +366,7 @@ Useful starting schemas:
 
 - `users`: email, passwordHash, role, createdAt.
 - `master_resumes`: userId, fileUrl, parsedText, fingerprint, metadata, upload date.
-- `tailored_resumes`: masterResumeId, userId, targetJobDescription, atsAnalysisSummary, latexSourceCode, compiledPdfUrl, createdAt.
+- `tailored_resumes`: resumeId, userId, targetJobDescription, atsAnalysisSummary, latexSourceCode, compiledPdfUrl, createdAt.
 - `discovered_jobs`: jobTitle, companyName, jobDescriptionText, applicationSourceUrl, pipelineStatus, discoveryTimestamp.
 - `prep_workspaces`: userId, associatedResumeId, targetJobDescription, companyResearchId, createdAt.
 - `question_sets`: workspaceId, generationType, questions with UUID, type, category, difficulty, prompt, options, correct answer, ideal answer, explanation.

@@ -6,6 +6,7 @@ import { env } from "../config/env.js";
 import { registerRoutes } from "./routes.js";
 import { errorHandler } from "../shared/errors/errorHandler.js";
 import { logger } from "../shared/logger/logger.js";
+// import { searchService } from "../infrastructure/search/index.js";
 // import { pdfService } from "../infrastructure/pdf/pdf.service.js";
 // import { resumeFileStorage } from "../infrastructure/storage/resumeFileStorage.js";
 
@@ -57,6 +58,14 @@ export function createApp() {
 
 //   res.json(file);
 // });
+
+//  app.get("/search", async (_, res) => {
+// const result = await searchService.search(
+//     "OpenAI software engineer interview process"
+//   );
+//   res.json(result);
+// })
+
 
   registerRoutes(app);
 

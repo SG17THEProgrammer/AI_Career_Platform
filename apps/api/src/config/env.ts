@@ -17,6 +17,7 @@ const envSchema = z.object({
   CLOUDINARY_CLOUD_NAME: z.string().optional(),
   CLOUDINARY_API_KEY: z.string().optional(),
   CLOUDINARY_API_SECRET: z.string().optional(),
+  JINA_API_KEY: z.string().optional(),
   LOCAL_UPLOAD_DIR: z.string().default("uploads")
 });
 

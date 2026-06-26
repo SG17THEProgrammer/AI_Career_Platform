@@ -1,6 +1,6 @@
 export interface ExtractedRequirements {
-  jobTitle?: string;
-  companyName?: string;
+  jobTitle: string;
+  companyName: string;
 
   hardSkills: string[];
   softSkills: string[];
