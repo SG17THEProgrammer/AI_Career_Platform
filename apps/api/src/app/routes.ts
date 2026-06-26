@@ -5,6 +5,7 @@ import { healthRouter } from "../modules/system/health.routes.js";
 import { atsRouter } from "../modules/ats/ats.routes.js";
 import { tailoredResumeRouter } from "../modules/tailored-resumes/tailoredResume.routes.js";
 import { researchRouter } from "../modules/research/research.routes.js";
+import { prepWorkspaceRoutes } from "../modules/prep/prepWorkspace.routes.js";
 
 export function registerRoutes(app: Express) {
   app.use("/health", healthRouter);
@@ -13,7 +14,11 @@ export function registerRoutes(app: Express) {
   app.use("/ats", atsRouter);
   app.use("/tailored-resumes", tailoredResumeRouter);
   app.use(
-  "/research",
-  researchRouter
-);
+    "/research",
+    researchRouter
+  );
+  app.use(
+    "/prep",
+    prepWorkspaceRoutes
+  );
 }
